@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/attendencecard"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginBottom="5sp"
+    card_view:cardCornerRadius="2sp"
+    card_view:cardBackgroundColor="#057683"
+    card_view:cardElevation="5sp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linl"
+            android:orientation="horizontal"
+            android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardtext"
+            android:textSize="35sp"
+            android:text="Maths rektjejgjoijgjioejgoir"
+            android:paddingTop="5sp"
+            android:paddingLeft="5sp"
+            android:singleLine="true"
+            android:id="@+id/subname"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:id="@+id/percent"
+            android:layout_gravity="center"
+            android:textColor="@color/cardtext"
+            android:text="23.00%"
+            android:padding="10sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linl"
+            android:id="@+id/currentpres"
+            android:text="Present"
+            android:textColor="@color/cardtext"
+            android:layout_marginLeft="5sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentpres"
+            android:text="Absent"
+            android:id="@+id/currentabs"
+            android:textColor="@color/cardtext"
+            android:layout_marginLeft="5sp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentabs">
+
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:text="P+"
+                android:textColor="@color/cardtext"
+                android:id="@+id/presentplus"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:text="P-"
+                android:textColor="@color/cardtext"
+                android:id="@+id/presentminus"
+                android:layout_toRightOf="@+id/presentplus"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:text="A+"
+                android:textColor="@color/cardtext"
+                android:id="@+id/absentplus"
+                android:layout_toLeftOf="@+id/absentminus"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:text="A-"
+                android:textColor="@color/cardtext"
+                android:id="@+id/absentminus"
+                android:layout_alignParentRight="true"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/attendencecard"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginBottom="5sp"
+    card_view:cardCornerRadius="2sp"
+    card_view:cardBackgroundColor="#057683"
+    card_view:cardElevation="5sp">
+
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="90sp"
+          android:layout_gravity="top"
+          android:id="@+id/upperview">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subname"
+                android:textSize="35sp"
+                android:textColor="@color/cardtext"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_alignParentLeft="true"
+                android:text="Maths a very long na"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:id="@+id/percent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:paddingTop="12sp"
+                android:textColor="@color/cardtext"
+                android:gravity="right"
+                android:text="23.00%"
+                android:paddingRight="10sp" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/subname"
+              android:id="@+id/currentpres"
+              android:text="Present"
+              android:textColor="@color/cardtext"
+              android:layout_marginLeft="5sp"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/currentpres"
+              android:text="Absent"
+              android:id="@+id/currentabs"
+              android:textColor="@color/cardtext"
+              android:layout_marginLeft="5sp"/>
+
+
+
+
+          </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="40sp"
+          android:id="@+id/bottomview"
+          >
+
+          <Button
+              android:layout_width="50sp"
+              android:layout_height="wrap_content"
+              android:text="P+"
+              android:layout_alignParentBottom="true"
+              android:textColor="@color/cardtext"
+              android:id="@+id/presentplus"
+              style="@style/Widget.AppCompat.Button.Borderless"/>
+          <Button
+              android:layout_width="50sp"
+              android:layout_height="wrap_content"
+              android:text="P-"
+              android:layout_alignParentBottom="true"
+              android:textColor="@color/cardtext"
+              android:id="@+id/presentminus"
+              android:layout_toRightOf="@+id/presentplus"
+              style="@style/Widget.AppCompat.Button.Borderless"/>
+
+          <Button
+              android:layout_width="50sp"
+              android:layout_height="wrap_content"
+              android:text="A+"
+              android:layout_alignParentBottom="true"
+              android:textColor="@color/cardtext"
+              android:id="@+id/absentplus"
+              android:layout_toLeftOf="@+id/absentminus"
+              style="@style/Widget.AppCompat.Button.Borderless"/>
+          <Button
+              android:layout_width="50sp"
+              android:layout_height="wrap_content"
+              android:text="A-"
+              android:layout_alignParentBottom="true"
+              android:textColor="@color/cardtext"
+              android:id="@+id/absentminus"
+              android:layout_alignParentRight="true"
+              style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+      </RelativeLayout>
+
+
+  </android.support.v7.widget.CardView>
+
+
+
+-->

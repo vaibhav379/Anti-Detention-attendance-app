@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Anti-Detention</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_remove">AddRemove</string>
+    <string name="title_activity_reminder">Reminders</string>
+    <string name="title_activity_marks">Marks</string>
+
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_ad">ca-app-pub-3205143103556588/1660415356</string>
+
+
+</resources>

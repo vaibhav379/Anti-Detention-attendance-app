@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Reminders"
+    tools:showIn="@layout/activity_reminder">
+
+
+
+<TextView
+    android:id="@+id/remindersubject"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Select subject and time"
+    android:textColor="@color/colorPrimary"
+    android:textSize="20dp"
+    android:textAlignment="center"/>
+
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/reminderspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remindersubject"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Weekly repeating "
+        android:layout_below="@+id/reminderspinner"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/repeatcheck"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repeatcheck"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Set time"
+        android:textColor="@android:color/white"
+        android:id="@+id/addtime"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addtime"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Cancel Alarm"
+        android:textColor="@android:color/white"
+        android:id="@+id/cancel"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancel"
+        android:text="time here"
+        android:layout_marginTop="20dp"
+        android:id="@+id/timetext"/>
+
+
+
+
+</RelativeLayout>
